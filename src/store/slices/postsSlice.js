@@ -35,8 +35,6 @@ export const postsSlice = createSlice({
 			})
 			.addCase(fetchPosts.fulfilled, (state, action) => {
 				const { items, pagination } = action.payload
-				console.log(pagination)
-
 				state.postsList = items
 				state.totalPagesNumber = pagination.totalPages
 				state.postsPerPage = pagination.pageSize
@@ -55,8 +53,6 @@ export const postsSlice = createSlice({
 			})
 			.addCase(fetchShowMorePosts.fulfilled, (state, action) => {
 				const { items, pagination } = action.payload
-				console.log(items)
-
 				state.currentPage = pagination.currentPage
 				state.postsList = [...state.postsList, ...items]
 				state.status = 'success'

@@ -17,8 +17,6 @@ function PostsPageInfinityScroll() {
 	const totalPagesNumberRef = useRef(totalPagesNumber)
 	const isLoadingRef = useRef(status)
 
-	console.log(postsList)
-
 	useEffect(() => {
 		currentPageRef.current = currentPage
 		totalPagesNumberRef.current = totalPagesNumber
@@ -32,8 +30,6 @@ function PostsPageInfinityScroll() {
 	}, [])
 
 	const onScrollPosts = () => {
-		console.log('currentPage', currentPageRef.current)
-		console.log('totalPagesNumberRef', totalPagesNumberRef.current)
 		if (currentPageRef.current === totalPagesNumberRef.current) {
 			document.removeEventListener('scroll', onScrollPosts)
 			return
