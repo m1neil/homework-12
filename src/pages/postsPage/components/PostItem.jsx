@@ -36,7 +36,7 @@ function PostItem({ postData, onDelete, isDeleting }) {
 					}
 				`}
 			>
-				Удалить
+				Видалити
 			</button>
 		</article>
 	)

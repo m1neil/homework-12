@@ -34,7 +34,7 @@ function Paginatino({ currentPage, totalPageNumber, onChangePage }) {
 							: 'bg-white text-gray-800 border-gray-300 hover:bg-cyan-100'
 					}`}
 				>
-					Предыдущая
+					Минула
 				</button>
 			) : null}
 			{createButtons()}
@@ -49,7 +49,7 @@ function Paginatino({ currentPage, totalPageNumber, onChangePage }) {
 							: 'bg-white text-gray-800 border-gray-300 hover:bg-cyan-100'
 					}`}
 				>
-					Следующая
+					Наступна
 				</button>
 			) : null}
 		</div>

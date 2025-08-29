@@ -8,8 +8,8 @@ import {
 
 const initialState = {
 	postsList: [],
-	currentPage: 1, // текущая страница
-	postsPerPage: 10, // кол. постов на странице
+	currentPage: 1,
+	postsPerPage: 10,
 	totalPagesNumber: 1,
 	status: 'idle',
 	statusAddPost: 'idle',
@@ -102,6 +102,6 @@ export const postsSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { setCurrentPage } = postsSlice.actions
+export const { setCurrentPage, resetPosts } = postsSlice.actions
 
 export default postsSlice.reducer
